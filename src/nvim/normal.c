@@ -867,7 +867,7 @@ static void normal_get_additional_char(NormalState *s)
       // typeahead buffer, so record an <Ignore> before that to prevent
       // the vpeekc() above from applying wrong mappings when replaying.
       no_u_sync++;
-      gotchars_ignore();
+      //gotchars_ignore();
       no_u_sync--;
     }
   }

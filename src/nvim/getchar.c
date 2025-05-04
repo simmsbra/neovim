@@ -2973,7 +2973,7 @@ static int vgetorpeek(bool advance)
   if (timedout && c == ESC) {
     // When recording there will be no timeout.  Add an <Ignore> after the
     // ESC to avoid that it forms a key code with following characters.
-    gotchars_ignore();
+    //gotchars_ignore();
   }
 
   vgetc_busy--;
